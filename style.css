@@ -1,0 +1,140 @@
+* {
+  margin: 0 auto;
+  font-family: Georgia;
+}
+
+body {
+  padding: 10px;
+
+}
+
+.wrapper {
+  background: rgb(31 39 109);
+}
+
+.container {
+  max-width: 1120px;
+  color: white;
+}
+
+.header {
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.header-col {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.logo-text {
+  font-size: 40px;
+
+}
+
+.navi-link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 0px 17px;
+}
+
+.nav-bar {
+  margin-top: 10px;
+}
+
+.inner-container {
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.small-title {
+  color: rgb(0, 255, 255);
+}
+
+.big-title {
+  color: white;
+  font-size: 40px;
+  margin: 20px 0px;
+}
+
+.title-description {
+  color: white;
+  font-size: 18px;
+  margin: 0px 0px 25px 0px;
+}
+
+.starter-button {
+  color: black;
+  background: #00bcd4;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.form-container {
+  background-color: white;
+  padding: 60px 30px;
+  border-radius: 10px;
+  color: black;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  max-width: 400px;
+}
+
+.form-container>label {
+  font-weight: bold;
+  display: block;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.input-field {
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 7px 15px;
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-btn {
+  background-color: rgb(31 39 109);
+  color: white;
+  display: block;
+  width: 100%;
+  margin: 20px auto;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  margin-top: 50px;
+}
+
+  h1 {
+    font-size: 4.2em;
+    text-align: center;
+    margin-bottom: 0.35em;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  ul,
+  ol {
+    list-style-position: inside;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+  }
+  div {
+    background-color: #ff0000;
+    width:150px;
+    height:150px;
+    float:left;
+    margin:15px;
+    border:5x solid #000000;
+  }
+  
