@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NER of Sales man</title>
+    <style>
+        * {
+            margin: 0 auto;
+            font-family: Georgia;
+        }
+
+        body {
+            padding: 10px;
+        }
+
+        .wrapper {
+            background: rgb(31 39 109);
+        }
+
+        .container {
+            max-width: 1120px;
+            color: white;
+        }
+
+        .header {
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .header-col {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .logo-text {
+            font-size: 40px;
+
+        }
+        ul,
+        ol {
+            list-style-position: inside;
+            font-size: 1.5em;
+            margin: 0;
+            padding: 0;
+        }
+        .blocks {
+            background-color: rgb(31 39 109);
+            width:150px;
+            height:150px;
+            float:left;
+            margin:15px;
+            border:5x solid #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <div class="header-col"><span class="logo-text">NER</span></div>
+            </div>
+            <main></main>
+            <script>
+                const cities = {{result|tojson}};
+                function generateListItems(arg){
+                    let items = "";
+                    for (let i = 0;i<arg.length;i++){
+                        items+= `<div class="blocks">${arg[i]}</div>`;
+                    }
+                    return items;
+                }
+                document.querySelector("main").innerHTML = `<ol>${generateListItems(cities)}</ol>`;
+            </script>
+        </div>
+    </div>
+</body>
+</html>
