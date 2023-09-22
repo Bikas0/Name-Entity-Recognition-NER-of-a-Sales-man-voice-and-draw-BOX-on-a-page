@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+    <title>NER of Sales man</title>
+    <style>
+        * {
+            margin: 0 auto;
+            font-family: Georgia;
+        }
+
+        body {
+            padding: 10px;
+        }
+
+        .wrapper {
+            background: rgb(31 39 109);
+        }
+
+        .container {
+            max-width: 1120px;
+            color: white;
+        }
+
+        .header {
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .header-col {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .logo-text {
+            font-size: 40px;
+
+        }
+
+        .nav-bar {
+            margin-top: 10px;
+        }
+
+        .inner-container {
+            overflow: hidden;
+            margin-top: 100px;
+        }
+
+        .small-title {
+            color: rgb(0, 255, 255);
+        }
+        .user-title {
+            color: black;
+        }
+
+        .big-title {
+            color: white;
+            font-size: 40px;
+            margin: 20px 0px;
+        }
+
+        .title-description {
+            color: white;
+            font-size: 18px;
+            margin: 0px 0px 25px 0px;
+        }
+
+        .starter-button {
+            color: black;
+            background: #00bcd4;
+            border-radius: 20px;
+            padding: 10px 20px;
+            border: none;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 60px 30px;
+            border-radius: 10px;
+            color: black;
+            box-sizing: border-box;
+            margin-bottom: 50px;
+            max-width: 400px;
+        }
+
+        .form-container>label {
+            font-weight: bold;
+            display: block;
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        .input-field {
+            border: none;
+            border-bottom: 1px solid gray;
+            padding: 7px 15px;
+            font-size: 18px;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .form-btn {
+            background-color: rgb(31 39 109);
+            color: white;
+            display: block;
+            width: 100%;
+            margin: 20px auto;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 30px;
+            border: none;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <div class="header-col"><span class="logo-text">NER</span></div>
+            </div>
+            <div class="inner-container">
+                <div class="header-col">
+                    <span class="small-title">Feature</span><br>
+                    <P class="big-title">Name Entity Recognition of a Sales Man.</P><br>
+                </div>
+                <div class="header-col">
+                    <div class="form-container">
+                        <form action = "/result", method = 'POST'>
+                            <div class="user-title"><h1>Let's Talk......</h1></div>
+                            <input class="form-btn" type = "submit" value = "Start off Talk">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
